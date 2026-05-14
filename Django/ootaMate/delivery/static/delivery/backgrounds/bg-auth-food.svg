@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c7d2fe"/>
+      <stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+    <pattern id="icons" width="260" height="200" patternUnits="userSpaceOnUse">
+      <!-- cloche -->
+      <path d="M70 100 C70 68 94 46 126 46 C158 46 182 68 182 100" fill="none" stroke="#1f2937" stroke-width="6" opacity="0.5"/>
+      <path d="M58 102 H194" stroke="#1f2937" stroke-width="6" opacity="0.5"/>
+      <circle cx="126" cy="40" r="6" fill="#1f2937" opacity="0.5"/>
+      <!-- tiny plate -->
+      <ellipse cx="126" cy="132" rx="52" ry="12" fill="#ffffff" opacity="0.55"/>
+      <!-- text -->
+      <text x="84" y="170" font-size="22" font-family="Arial" fill="#1f2937" opacity="0.5">FOOD</text>
+    </pattern>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <rect width="1400" height="900" fill="url(#icons)"/>
+</svg>

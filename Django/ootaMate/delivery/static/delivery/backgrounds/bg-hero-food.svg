@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b9fbc0"/>
+      <stop offset="1" stop-color="#a0e7e5"/>
+    </linearGradient>
+    <pattern id="icons" width="280" height="220" patternUnits="userSpaceOnUse">
+      <!-- plate -->
+      <circle cx="70" cy="70" r="40" fill="#ffffff" opacity="0.7"/>
+      <circle cx="70" cy="70" r="24" fill="none" stroke="#0b6b4b" stroke-width="5" opacity="0.5"/>
+      <!-- spoon -->
+      <ellipse cx="165" cy="58" rx="12" ry="18" fill="#0b6b4b" opacity="0.45"/>
+      <rect x="161" y="72" width="8" height="42" rx="4" fill="#0b6b4b" opacity="0.45"/>
+      <!-- fork -->
+      <rect x="198" y="40" width="6" height="70" rx="3" fill="#08573c" opacity="0.45"/>
+      <rect x="190" y="40" width="4" height="24" rx="2" fill="#08573c" opacity="0.45"/>
+      <rect x="196" y="40" width="4" height="24" rx="2" fill="#08573c" opacity="0.45"/>
+      <rect x="202" y="40" width="4" height="24" rx="2" fill="#08573c" opacity="0.45"/>
+      <rect x="208" y="40" width="4" height="24" rx="2" fill="#08573c" opacity="0.45"/>
+      <!-- bowl -->
+      <path d="M45 150 C45 118 95 118 95 150 C95 170 83 182 70 182 C57 182 45 170 45 150 Z" fill="#ffffff" opacity="0.65"/>
+      <path d="M40 150 H100" stroke="#0b6b4b" stroke-width="5" opacity="0.5" />
+      <!-- spice dots -->
+      <circle cx="150" cy="150" r="6" fill="#e11d48" opacity="0.55"/>
+      <circle cx="170" cy="165" r="5" fill="#f97316" opacity="0.55"/>
+      <circle cx="186" cy="150" r="5" fill="#f59e0b" opacity="0.55"/>
+      <!-- cuisine label -->
+      <text x="112" y="198" font-size="24" font-family="Arial" fill="#065f46" opacity="0.55">CUISINE</text>
+    </pattern>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <rect width="1400" height="900" fill="url(#icons)"/>
+</svg>

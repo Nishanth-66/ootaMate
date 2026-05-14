@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fecaca"/>
+      <stop offset="1" stop-color="#fde68a"/>
+    </linearGradient>
+    <pattern id="icons" width="300" height="220" patternUnits="userSpaceOnUse">
+      <!-- menu card -->
+      <rect x="30" y="30" width="120" height="140" rx="14" fill="#ffffff" opacity="0.55"/>
+      <path d="M50 62 H130 M50 84 H124 M50 106 H128 M50 128 H118" stroke="#111827" stroke-width="6" opacity="0.45" stroke-linecap="round"/>
+      <!-- bowl -->
+      <path d="M185 120 C185 84 235 84 235 120 C235 142 220 160 210 160 C200 160 185 142 185 120 Z" fill="#ffffff" opacity="0.55"/>
+      <path d="M178 120 H242" stroke="#111827" stroke-width="6" opacity="0.45"/>
+      <!-- text -->
+      <text x="170" y="190" font-size="24" font-family="Arial" fill="#111827" opacity="0.45">MENU</text>
+    </pattern>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <rect width="1400" height="900" fill="url(#icons)"/>
+</svg>

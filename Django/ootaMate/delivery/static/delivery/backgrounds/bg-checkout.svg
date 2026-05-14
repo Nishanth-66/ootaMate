@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cffafe"/>
+      <stop offset="1" stop-color="#fbcfe8"/>
+    </linearGradient>
+    <pattern id="cards" width="160" height="120" patternUnits="userSpaceOnUse">
+      <rect x="14" y="16" width="86" height="56" rx="10" fill="#0b6b4b" opacity="0.08"/>
+      <rect x="64" y="54" width="86" height="56" rx="10" fill="#08573c" opacity="0.06"/>
+    </pattern>
+    <!-- receipt + utensils cue -->
+    <pattern id="food" width="220" height="160" patternUnits="userSpaceOnUse">
+      <rect x="18" y="22" width="78" height="96" rx="10" fill="#ffffff" opacity="0.22"/>
+      <path d="M30 44 H84 M30 58 H78 M30 72 H86 M30 86 H74" stroke="#0b6b4b" stroke-opacity="0.16" stroke-width="4" stroke-linecap="round"/>
+      <path d="M144 40 v34 M138 40 v34 M150 40 v34 M144 40 v-14"
+            stroke="#08573c" stroke-opacity="0.14" stroke-width="4" stroke-linecap="round"/>
+      <path d="M176 40 c10 16 10 34 0 50" fill="none" stroke="#08573c" stroke-opacity="0.14" stroke-width="4" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <rect width="1200" height="800" fill="url(#cards)"/>
+  <rect width="1200" height="800" fill="url(#food)"/>
+</svg>

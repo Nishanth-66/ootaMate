@@ -1,0 +1,85 @@
+body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a24;
+    font-weight: 800;
+}
+
+a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: #1d4ed8;
+}
+
+
+
+/* Basic shared styling for forms/tables/buttons on the login/signup pages. */
+form {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+textarea {
+    padding: 10px 12px;
+    border: 1px solid #b8efd8;
+    border-radius: 10px;
+    margin: 6px 0;
+    min-width: 260px;
+}
+
+button {
+    background: #0b6b4b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+button:hover {
+    background: #08573c;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 16px auto;
+    width: min(1100px, 98vw);
+}
+
+th, td {
+    border: 1px solid #b8efd8;
+    padding: 12px;
+}
+
+th {
+    background: #0b6b4b;
+    color: #ffffff;
+}

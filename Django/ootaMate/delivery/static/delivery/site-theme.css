@@ -1,0 +1,143 @@
+/* Shared app theme for all delivery pages.
+   Used by templates via: {% static 'delivery/site-theme.css' %} */
+
+:root {
+  --brand: #0b6b4b;
+  --brand-dark: #08573c;
+  --bg: aquamarine;
+  --card: #ffffff;
+  --border: #b8efd8;
+  --text: #062017;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/static/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #1a1a24;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: #1a1a24;
+  font-style: normal;
+  font-weight: 800;
+}
+
+a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.2s;
+    margin: 10px;
+}
+
+a:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+}
+
+/* Tables (used across cart/menu/admin pages) */
+table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 18px auto;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: var(--brand);
+  color: #ffffff;
+  font-style: normal;
+}
+
+/* Images (restaurant/menu pictures) */
+img {
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Forms + inputs */
+form {
+  text-align: center;
+}
+
+label {
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+textarea {
+  width: min(420px, 92vw);
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin: 6px 0;
+  background: #ffffff;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  background: var(--brand);
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: var(--brand-dark);
+}
+
+/* Razorpay button id on checkout page */
+#rzp-button {
+  display: inline-block;
+}
+

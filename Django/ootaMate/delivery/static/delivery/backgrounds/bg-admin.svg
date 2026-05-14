@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#fecaca"/>
+    </linearGradient>
+    <pattern id="dots" width="44" height="44" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="3" fill="#08573c" opacity="0.16"/>
+      <circle cx="34" cy="30" r="3" fill="#08573c" opacity="0.12"/>
+    </pattern>
+    <!-- menu/restaurant cue pattern -->
+    <pattern id="menu" width="180" height="140" patternUnits="userSpaceOnUse">
+      <rect x="18" y="18" width="90" height="62" rx="12" fill="#ffffff" opacity="0.22"/>
+      <path d="M32 36 H96 M32 50 H88 M32 64 H92" stroke="#0b6b4b" stroke-opacity="0.16" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="140" cy="54" r="18" fill="#ffffff" opacity="0.20"/>
+      <path d="M132 54 C136 46 144 46 148 54" fill="none" stroke="#08573c" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="136" cy="76" r="3" fill="#0b6b4b" opacity="0.14"/>
+      <circle cx="148" cy="84" r="3" fill="#0b6b4b" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <rect width="1200" height="800" fill="url(#dots)"/>
+  <rect width="1200" height="800" fill="url(#menu)"/>
+  <path d="M0,120 C180,40 360,140 520,90 C720,30 930,0 1200,80 L1200,0 L0,0 Z" fill="#0b6b4b" opacity="0.06"/>
+  <path d="M0,760 C300,700 520,820 760,760 C980,705 1120,650 1200,670 L1200,800 L0,800 Z" fill="#0b6b4b" opacity="0.06"/>
+</svg>

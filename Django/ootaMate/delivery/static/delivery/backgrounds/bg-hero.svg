@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a7f3d0"/>
+      <stop offset="1" stop-color="#d9f99d"/>
+    </linearGradient>
+    <radialGradient id="r" cx="30%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <!-- food/cuisine motif pattern -->
+    <pattern id="food" width="180" height="180" patternUnits="userSpaceOnUse">
+      <!-- plate -->
+      <circle cx="70" cy="72" r="28" fill="#ffffff" opacity="0.40"/>
+      <circle cx="70" cy="72" r="18" fill="none" stroke="#0b6b4b" stroke-opacity="0.18" stroke-width="3"/>
+      <!-- bowl -->
+      <path d="M122 58 C132 58 140 66 140 76 C140 92 128 104 112 104 C96 104 84 92 84 76 C84 66 92 58 102 58 Z"
+            fill="#ffffff" opacity="0.32"/>
+      <path d="M90 78 C96 68 104 68 110 78" fill="none" stroke="#08573c" stroke-opacity="0.18" stroke-width="3" stroke-linecap="round"/>
+      <!-- chili/spice dots -->
+      <circle cx="30" cy="132" r="4" fill="#08573c" opacity="0.18"/>
+      <circle cx="44" cy="144" r="3" fill="#0b6b4b" opacity="0.14"/>
+      <circle cx="58" cy="132" r="3" fill="#0b6b4b" opacity="0.12"/>
+      <!-- fork -->
+      <path d="M152 120 v-28 M146 92 v28 M158 92 v28 M152 92 v-16"
+            stroke="#0b6b4b" stroke-opacity="0.14" stroke-width="4" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <rect width="1200" height="800" fill="url(#food)" opacity="1"/>
+  <circle cx="360" cy="180" r="260" fill="url(#r)"/>
+  <circle cx="980" cy="620" r="320" fill="url(#r)"/>
+  <path d="M0,560 C220,520 360,620 560,580 C760,540 940,420 1200,470 L1200,800 L0,800 Z" fill="#0b6b4b" opacity="0.08"/>
+  <path d="M0,610 C220,560 380,690 580,640 C800,590 930,500 1200,540 L1200,800 L0,800 Z" fill="#08573c" opacity="0.06"/>
+</svg>

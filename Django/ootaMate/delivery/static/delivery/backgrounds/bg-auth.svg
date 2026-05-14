@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a5f3fc"/>
+      <stop offset="1" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <pattern id="p" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M0 40 H80" stroke="#0b6b4b" stroke-opacity="0.12" stroke-width="2"/>
+      <path d="M40 0 V80" stroke="#0b6b4b" stroke-opacity="0.10" stroke-width="2"/>
+      <circle cx="40" cy="40" r="6" fill="#0b6b4b" opacity="0.14"/>
+    </pattern>
+    <!-- subtle food icons for auth pages -->
+    <pattern id="food" width="160" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="36" cy="44" r="18" fill="#ffffff" opacity="0.28"/>
+      <circle cx="36" cy="44" r="10" fill="none" stroke="#0b6b4b" stroke-opacity="0.16" stroke-width="3"/>
+      <path d="M104 34 h28" stroke="#08573c" stroke-opacity="0.14" stroke-width="5" stroke-linecap="round"/>
+      <path d="M118 34 v44" stroke="#08573c" stroke-opacity="0.14" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="112" cy="66" r="3" fill="#0b6b4b" opacity="0.14"/>
+      <circle cx="124" cy="74" r="3" fill="#0b6b4b" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <rect width="1200" height="800" fill="url(#p)"/>
+  <rect width="1200" height="800" fill="url(#food)"/>
+  <path d="M0,700 C260,640 420,780 620,720 C860,650 980,560 1200,610 L1200,800 L0,800 Z" fill="#0b6b4b" opacity="0.08"/>
+</svg>
