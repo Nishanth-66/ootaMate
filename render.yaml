@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ootaMate
+    env: python
+    plan: starter
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn ootaMate.wsgi --log-file -
+    healthCheckPath: /
+    envVars:
+      - key: DEBUG
+        value: "False"
+    root: Django/ootaMate

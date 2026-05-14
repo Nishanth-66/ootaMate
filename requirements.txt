@@ -1,0 +1,5 @@
+Django==6.0.4
+gunicorn==22.1.0
+whitenoise==1.4.0
+razorpay==2.0.1
+requests==2.33.1
