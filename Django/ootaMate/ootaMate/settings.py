@@ -24,15 +24,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-0==o-hj$fj4*oq4@!24t2001wuf23rf1!jir9z8=jjf7z^8(#o')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', 'True').lower() in ('true', '1', 'yes')
+DEBUG = os.environ.get('DEBUG', 'False').lower() in ('true', '1', 'yes')
 
 _raw_allowed = os.environ.get('ALLOWED_HOSTS', '')
 if _raw_allowed:
     # allow comma-separated list from env (e.g. "example.com,localhost")
     ALLOWED_HOSTS = [h.strip() for h in _raw_allowed.split(',') if h.strip()]
 else:
-    # Default to localhost in development; allow all hosts in production when not set
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1'] if DEBUG else ['*']
+    # If ALLOWED_HOSTS is not provided, allow all hosts on Render.
+    ALLOWED_HOSTS = ['*']
 
 
 # Application definition
