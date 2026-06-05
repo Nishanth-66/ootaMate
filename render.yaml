@@ -4,10 +4,19 @@ services:
     env: python
     plan: starter
     branch: main
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn ootaMate.wsgi --log-file -
+    buildCommand: |
+      cd Django/ootaMate && 
+      pip install -r ../../requirements.txt && 
+      python manage.py migrate && 
+      python manage.py collectstatic --no-input
+    startCommand: |
+      cd Django/ootaMate && 
+      gunicorn ootaMate.wsgi --log-file -
     healthCheckPath: /
     envVars:
       - key: DEBUG
         value: "False"
-    root: Django/ootaMate
+      - key: ALLOWED_HOSTS
+        value: "*"
+      - key: SECRET_KEY
+        sync: false
