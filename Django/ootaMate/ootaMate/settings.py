@@ -27,15 +27,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-0==o-hj$fj4*oq4@!24t2
 DEBUG = os.environ.get('DEBUG', 'False').lower() in ('true', '1', 'yes')
 
 _raw_allowed = os.environ.get('ALLOWED_HOSTS', '')
-if _raw_allowed:
-    # Allow comma-, space-, or semicolon-separated host lists from env.
-    raw_hosts = _raw_allowed.replace(';', ' ').replace(',', ' ').split()
-    ALLOWED_HOSTS = [host.strip() for host in raw_hosts if host.strip()]
-    if '*' in ALLOWED_HOSTS:
-        ALLOWED_HOSTS = ['*']
-else:
-    # On Render, allow all hosts and the Render domain
-    ALLOWED_HOSTS = ['*', 'ootamate.onrender.com']
+# On Render/production, accept all hosts to avoid 400 errors
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
