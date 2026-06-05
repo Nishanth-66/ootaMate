@@ -9,7 +9,7 @@ services:
     healthCheckPath: /
     envVars:
       - key: DEBUG
-        value: "False"
+        value: "True"
       - key: ALLOWED_HOSTS
         value: "*"
       - key: SECRET_KEY
