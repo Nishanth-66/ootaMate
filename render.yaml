@@ -4,14 +4,8 @@ services:
     env: python
     plan: starter
     branch: main
-    buildCommand: |
-      cd Django/ootaMate && 
-      pip install -r ../../requirements.txt && 
-      python manage.py migrate && 
-      python manage.py collectstatic --no-input
-    startCommand: |
-      cd Django/ootaMate && 
-      gunicorn ootaMate.wsgi --log-file -
+    buildCommand: pip install -r requirements.txt && cd Django/ootaMate && python manage.py migrate && python manage.py collectstatic --no-input
+    startCommand: cd Django/ootaMate && gunicorn ootaMate.wsgi
     healthCheckPath: /
     envVars:
       - key: DEBUG
