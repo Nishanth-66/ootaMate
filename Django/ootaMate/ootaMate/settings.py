@@ -34,8 +34,8 @@ if _raw_allowed:
     if '*' in ALLOWED_HOSTS:
         ALLOWED_HOSTS = ['*']
 else:
-    # If ALLOWED_HOSTS is not provided, allow all hosts on Render.
-    ALLOWED_HOSTS = ['*']
+    # On Render, allow all hosts and the Render domain
+    ALLOWED_HOSTS = ['*', 'ootamate.onrender.com']
 
 
 # Application definition
