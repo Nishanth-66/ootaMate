@@ -28,8 +28,11 @@ DEBUG = os.environ.get('DEBUG', 'False').lower() in ('true', '1', 'yes')
 
 _raw_allowed = os.environ.get('ALLOWED_HOSTS', '')
 if _raw_allowed:
-    # allow comma-separated list from env (e.g. "example.com,localhost")
-    ALLOWED_HOSTS = [h.strip() for h in _raw_allowed.split(',') if h.strip()]
+    # Allow comma-, space-, or semicolon-separated host lists from env.
+    raw_hosts = _raw_allowed.replace(';', ' ').replace(',', ' ').split()
+    ALLOWED_HOSTS = [host.strip() for host in raw_hosts if host.strip()]
+    if '*' in ALLOWED_HOSTS:
+        ALLOWED_HOSTS = ['*']
 else:
     # If ALLOWED_HOSTS is not provided, allow all hosts on Render.
     ALLOWED_HOSTS = ['*']
@@ -125,6 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
