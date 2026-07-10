@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign IN</title>
+    {% load static %}
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body class="page-signin">
+    <h3>SIGN IN below:</h3>
+
+    <form action = "{% url 'signin' %}" method="POST">
+        {% csrf_token %}      
+
+       <label>Username </label>
+       <input type="text" name="username">
+       <br><br>
+       <label>Password </label>
+       <input type="password" name="password">
+       <br><br>
+
+       <br><br>
+       <button type="submit">SIGN IN</button>
+    </form>
+</body>
+</html>
